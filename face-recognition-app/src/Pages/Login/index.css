@@ -1,0 +1,104 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+#signin_container{
+min-height: 100vh;
+display: flex;
+/* align-items: center;  */
+justify-content: center;
+padding-top: 2em;
+
+}
+#signin_container_form{
+height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: -2.5em;
+flex:5;
+}
+#signin_container_form label{
+    color: #3F3D56;
+}
+#mid-line{
+border-left: 1.5px solid #666666;
+height: 70vh;
+ z-index: -1;
+ margin-left:-1.9em;  
+ flex:1;
+}
+#signin_image{
+    max-width: 550px;
+    flex:8;
+    margin-left: 6.5em;
+    margin-top: 5.5em;
+}
+#signin_container input{
+color: #2F2E41;
+border: 1.9px solid #3F3D56;
+border-radius: 2em;
+width: 31.25em;
+height: 4em;
+margin-bottom: 3em;
+text-align: center;
+}
+#signin_container input:focus{
+border: 1.5px solid #FF5D00;
+}
+#signin_container_form .email{
+    margin-top: 1.5em;
+}
+#signinform-group{
+display: flex;
+flex-direction: column;
+}
+#signin_submit_btn{
+background: #FF5D00;
+cursor: pointer;
+width: 28.5em;
+height: 3.8em;
+border: none;
+font-size: 15px;
+font-weight: bold;
+color: white;
+border-radius: 2em;
+position: absolute;
+bottom: 8em;
+}
+#fp-link{
+text-decoration: none;
+color: #FF5D00;
+font-weight: bold;
+}
+#fp-link:hover{
+color: #3F3D56;
+}
+
+#signin_container_form h1{
+font-weight: bold;
+color:#2F2E41;
+position: absolute;
+top: 4em;
+}
+#signin_submit_btn:hover{
+background: #3F3D56;
+}
+#signin_container_form label::after{
+content:" *";
+color: #FF5D00;
+display:inline;
+}
+#signin_container_form h4,h5{
+color: #2F2E41;
+margin-bottom: 0.5em;
+font-weight: normal;
+}
+#signin_container_form h5{
+position: absolute;
+bottom: 3em;
+margin-left: 6em;
+font-size: 16px;
+}
+#signin_container_form h6{
+font-size: 16px;
+}
