@@ -61,6 +61,9 @@ display: flex;
 flex-direction: column;
 justify-content: center; 
 }
+.first-section-btn:hover{
+    background: rgb(63,116,170);
+}
 .first-section-btn a{
     text-decoration: none;
     color: white;
@@ -128,6 +131,13 @@ flex-direction: column;
 justify-content: center; 
 margin-top: 1em;
 margin-bottom: 1.5em;
+}
+.services-btn a{
+    text-decoration: none;
+    color: white;
+}
+.services-btn:hover{
+    background: rgb(63,116,170);
 }
 
 /* Features section */
@@ -285,6 +295,7 @@ max-height:550px ;
     min-height: 80vh;
      display: flex;
      color: white;
+     flex-direction: column;
     justify-content: center;
     align-items: center;  
 }
@@ -310,12 +321,14 @@ max-height:550px ;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 .Testimonials-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 4em;
 }
 .Testimonials-heading{
     font-size: larger;
@@ -336,6 +349,24 @@ max-height:550px ;
     border-radius: 1.5em;
     background: white;
     margin-bottom: 1em;
+}
+.testimonials-prev img{
+    width: 3em;
+    height:auto;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+
+}
+.testimonials-dot {
+  height: 8px; 
+  width: 8px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1.2em;
+  background-color: #0A93E2;
+  border-radius: 50%;
+  display: inline-block; 
 }
 
 /* Footer section */

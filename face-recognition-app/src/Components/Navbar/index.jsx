@@ -37,7 +37,7 @@ function Navbar() {
                         <Link to='/Login' > Sign In</Link>
                     </li>
                     <li>
-                        <Link to='/sign-up' >Sign Up</Link>
+                        <Link id="sign-up-now-link" to='/sign-up' style={{ color: "white", fontWeight: "bold" }} >Sign Up</Link>
                     </li>
                 </ul>
 
