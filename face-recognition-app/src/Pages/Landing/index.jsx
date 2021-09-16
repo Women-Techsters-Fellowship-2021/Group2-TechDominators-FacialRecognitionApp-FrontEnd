@@ -10,7 +10,8 @@ import trafalgar from '../../store/trafalgar.svg';
 import facebook from '../../store/facebook.png';
 import youtube from '../../store/youtube.png';
 import linkedin from '../../store/linkedin.png';
-
+import left from '../../store/left-arrows.png';
+import right from '../../store/right-arrows.svg';
 
 import './index.css';
 
@@ -47,7 +48,10 @@ function Landing() {
                         ))}
                     </div>
                 </div>
-                <button className="services-btn">Learn More</button>
+                <div className="services-btn">
+                    <a href="/services">Learn More</a>
+                </div>
+
 
             </section>
 
@@ -106,8 +110,20 @@ function Landing() {
                         <p>"App is easy to navigate and I feel safer knowing that I am in charge of authorizing and confirming who comes to pick up my son."</p>
                     </div>
                 </div>
+                <div>
+                    {/* <!-- Next and previous buttons --> */}
+                    <a className="testimonials-prev" href="/testimonials"><img src={left} alt="" /></a>
+                    {/* <!-- The dots/circles --> */}
+
+                    <span className="testimonials-dot"></span>
+                    <span className="testimonials-dot"></span>
+                    <span className="testimonials-dot"></span>
+
+                    <a className="testimonials-prev" href="/testimonials" ><img src={right} alt="" /></a>
+                </div>
             </section>
 
+            {/* FOOTER */}
 
             <footer className="reflex-footer">
                 <div className="reflex-l-footer">
