@@ -21,7 +21,7 @@ function Login() {
             ...values,
             [name]: value,
         });
-        console.log()
+        console.log(values);
     };
 
     // handle input form submission
