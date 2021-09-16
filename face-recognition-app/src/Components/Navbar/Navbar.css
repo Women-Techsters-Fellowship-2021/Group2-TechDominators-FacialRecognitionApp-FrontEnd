@@ -51,3 +51,12 @@ width: auto;
   color: #00478F;
   font-weight: bold;
 }
+#sign-up-now-link {
+  background: #FF5D00;
+  padding: 0.8em 1.5em;
+  border-radius: 1.3em;
+  color: rgb(255, 255, 255);
+}
+#sign-up-now-link:hover{
+ background: #3F74AA;
+}
