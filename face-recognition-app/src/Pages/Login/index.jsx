@@ -1,10 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import Group from '../../store/Group.9.mod.png';
 import './index.css';
 
 
 function Login() {
+
+    const loginHistory = useHistory();
 
     const initialValues = {
         Email: "",
@@ -25,8 +28,8 @@ function Login() {
     };
 
     // handle input form submission
-    function HandleInputSubmission(e) {
-        e.preventDefault();
+    function HandleInputSubmission() {
+        // e.preventDefault();
 
         // POST request using fetch inside useEffect React hook
         const url = 'https://localhost:5001/api/v1/Authentication/login';
@@ -55,6 +58,7 @@ function Login() {
                 console.log('Error message: ', error);
             });
 
+        loginHistory.push('/');
     }
 
     return (
