@@ -1,39 +1,83 @@
 import React from 'react';
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import Footer from '../../Components/Footer';
 import contactimg from '../../store/contactimg.svg';
 import './index.css';
 
-
-
-
 function ContactUs() {
+    const history = useHistory();
+
+    const initialValues = {
+        FullName: "",
+        Email: "",
+        Message: ""
+    };
+
+    const [values, setValues] = useState(initialValues);
+    // handle change function
+    const handleInputChange = (e) => {
+
+        const { name, value } = e.target;
+        e.preventDefault();
+        setValues({
+            ...values,
+            [name]: value,
+        });
+        console.log(values);
+    };
+    function handleInputSubmission() {
+        history.push('/');
+    }
+
     return (
-        <div>
+        <div id="contact-us-section">
 
-            <img className="ctimg" src={contactimg} alt="" />
+            <img className="contact-us-image" src={contactimg} alt="" />
 
 
-            <div className="stylecontacts">
-                <h1>Get in touch for more enquires</h1>
-                <br></br>
-                <h4>Leave us a message, we will get back to you shortly</h4>
+            <form className="contact-us-form" onSubmit={handleInputSubmission}>
+                <h1>Get in touch for more enquiries</h1>
 
-                <br></br>
+                <p>Leave us a message, we will get back to you shortly</p>
 
-                <p>FullName</p>
-                <input className="inputs"></input>
-                <br></br>
+                <label htmlFor="">Full Name</label>
+                <input
+                    className="contact-us-inputs"
+                    type="text"
+                    name="FullName"
+                    label="FullName"
+                    value={values.FullName}
+                    onChange={handleInputChange}
+                    required />
 
-                <p>Email Address</p>
-                <input className="inputs" type="text" ></input>
 
-                <br></br>
+                <label htmlFor="">Email Address</label>
+                <input
+                    className="contact-us-inputs"
+                    type="text"
+                    name="Email"
+                    label="Email"
+                    value={values.Email}
+                    onChange={handleInputChange}
+                    required />
 
-                <p>Message</p>
-                <input className="inputs3" type="text"></input>
 
-                <button className="btn-ct">Send</button>
+                <label htmlFor="">Message</label>
+                <input
+                    className="contact-us-input3"
+                    type="text"
+                    name="Message"
+                    label="Message"
+                    value={values.Message}
+                    onChange={handleInputChange}
+                    required />
 
-            </div>
+                <input id="contact-us-btn" type="submit" value="Send" />
+
+            </form>
+
+            <Footer />
         </div>
 
     );

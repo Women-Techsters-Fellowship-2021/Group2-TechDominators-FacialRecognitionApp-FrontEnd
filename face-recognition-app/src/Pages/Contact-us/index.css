@@ -1,77 +1,78 @@
-/* .ctimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#contact-us-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .contact-us-image{
   width: 70%;
-  height:50%;
+  margin-top: 1.5em; 
 }
-.stylecontacts{align-items:center;
- justify-content:center;
- display:block;
- margin-left: auto;
- margin-right: auto;
-width:40%;
-flex:center;
-padding:14px 14px;
-
-};
-
-h1 {text-align:center;
-   display:inline;
-   float:none;
-   padding: 20px 20px;
-
+.contact-us-form{
+  width:70%;
+  margin-bottom: 4em;
+  margin-top: -5em;
 }
-
-
-h4{text-align:center;
-   display:inline;
-   float:none;
-   padding: 5px 5px;
-
+.contact-us-form h1 {
+  color:#2F2E41;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
 }
-p{
-
-  
+.contact-us-form p{
+  color: #2F2E41;
+  margin-bottom: 2em;
+}
+.contact-us-form label{
+  color: #2F2E41;
+}
+.contact-us-form label::after{
+content:" *";
+color: #FF5D00;
+display:inline;
 }
 
-
-.btn-ct {
-display:inline-block;
-border:none;
-padding:14px 14px;
-text-align:center;
-text-decoration:none;
-font-size:16px;
-color:white;
-  background-color:orangered;
-  border-radius:12px;
-  width:15%;
-  justify-content:center;
-}
-.btn-ct:hover {
-
-color:green;
-
-}
-
-.inputs{
-
+.contact-us-inputs{
   width:100%;
+  color: #2F2E41;
+  font-size: 14px;
   padding:12px 20px;
-  margin:8px 0;
-  box-sizing:border-box;
-  border:2px solid black;
+  border:1.5px solid #3F3D56;
   border-radius:4px;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.contact-us-inputs:focus{
+  border: 1.5px solid #FF5D00;
+}
+.contact-us-input3:focus{
+  border: 1.5px solid #FF5D00;
 }
 
-.inputs3{
-
-min-height: 400px !important;
+.contact-us-input3{
+  min-height: 400px;
+  color: #2F2E41;
+  border:1.5px solid #3F3D56;
   width:100%;
+  font-size: 15px;
   padding:12px 20px;
-  margin:8px 0;
-  box-sizing:border-box;
-  border:2px solid black;
   border-radius:4px;
-} */
+  margin-bottom: 3em;
+}
+ 
+#contact-us-btn{
+  background:#FF5D00;
+  width: 8em; 
+  height: 3em;
+  padding: 0.1em 2em;
+  border-radius:2em;
+  font-weight: bold;
+  font-size:16px;
+  color: white;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  cursor: pointer; 
+  float: right;
+} 
+ #contact-us-btn:hover{
+   background: #3F3D56;
+ }
