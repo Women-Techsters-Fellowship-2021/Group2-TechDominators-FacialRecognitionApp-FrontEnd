@@ -1,12 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../../Components/Footer';
 import contactimg from '../../store/contactimg.svg';
 import './index.css';
 
 function ContactUs() {
-    const history = useHistory();
+    // const history = useHistory();
 
     const initialValues = {
         FullName: "",
@@ -26,8 +28,10 @@ function ContactUs() {
         });
         console.log(values);
     };
-    function handleInputSubmission() {
-        history.push('/');
+    const handleInputSubmission = (e) => {
+        e.preventDefault();
+        toast.success("Thank you for your input! We will get back to you shortly.");
+        // history.push('/');
     }
 
     return (
