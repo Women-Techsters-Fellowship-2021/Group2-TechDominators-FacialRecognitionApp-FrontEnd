@@ -76,3 +76,11 @@ display:inline;
  #contact-us-btn:hover{
    background: #3F3D56;
  }
+
+ @media screen and (max-width: 700px) {
+
+  .contact-us-form h1 {
+  font-size: 24px;
+  margin-top: 3.5em; 
+}
+}
