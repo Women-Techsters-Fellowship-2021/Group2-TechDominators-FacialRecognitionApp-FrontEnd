@@ -35,7 +35,7 @@ width: auto;
 #nav-links{
   display: flex;
   justify-content: space-around;
-  width: 45%;
+  width: 50%;
   list-style: none; 
 }
 #nav-links a{
@@ -53,10 +53,32 @@ width: auto;
 }
 #sign-up-now-link {
   background: #FF5D00;
-  padding: 0.8em 1.5em;
+  padding: 0.8em 1em;
   border-radius: 1.3em;
   color: rgb(255, 255, 255);
 }
 #sign-up-now-link:hover{
  background: #3F74AA;
+}
+
+ @media screen and (max-width: 800px) {
+
+  #nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  list-style: none; 
+
+}
+}
+
+@media screen and (max-width: 800px) {
+
+  #nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  list-style: none; 
+
+}
 }
