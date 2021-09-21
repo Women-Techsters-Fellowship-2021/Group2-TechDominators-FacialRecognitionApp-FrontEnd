@@ -4,6 +4,8 @@ import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import ContactUs from "./Pages/Contact-us";
+// import AddNewUser from "./Pages/AddNewUser";
+// import { WebcamCapture } from "./Pages/FaceScan";
 
 
 
@@ -12,6 +14,10 @@ function App() {
 
 
     <div className="App">
+
+      {/* < AddNewUser /> */}
+
+      {/* <WebcamCapture /> */}
 
       <BrowserRouter>
         <Navbar />
