@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 // import { toast } from 'react-toastify';
+import './index.css';
 
 function AddNewUser() {
     const initialValues = {
@@ -30,9 +31,9 @@ function AddNewUser() {
     };
 
     return (
-        <div>
-            <form action="">
-                <div id="signinform-group" className="email">
+        <div id="addnewuserformcontainer">
+            <form action="" id="addnewuserform">
+                <div id="adduserformgroup" className="email">
                     <label htmlFor="">Student Name</label>
                     <input
                         type="text"
@@ -43,53 +44,57 @@ function AddNewUser() {
                         required
                     />
                 </div>
-                <div id="signinform-group">
-                    <label htmlFor="">Age</label>
-                    <input
-                        type="number"
-                        name="Age"
-                        label="Age"
-                        value={values.Age}
-                        onChange={handleInputChange}
-                        required
-                    />
+                <div id="adduserageandclass">
+                    <div id="adduserformgroup">
+                        <label htmlFor="">Age</label>
+                        <input
+                            type="number"
+                            name="Age"
+                            label="Age"
+                            value={values.Age}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div id="adduserformgroup">
+                        <label htmlFor="">Class</label>
+                        <input
+                            type="text"
+                            name="Class"
+                            label="Class"
+                            value={values.Class}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
                 </div>
-                <div id="signinform-group">
-                    <label htmlFor="">Class</label>
-                    <input
-                        type="text"
-                        name="Class"
-                        label="Class"
-                        value={values.Class}
-                        onChange={handleInputChange}
-                        required
-                    />
+                <div id="adduseraddressandcountry">
+                    <div id="adduserformgroup">
+                        <label htmlFor="">Address</label>
+                        <input
+                            type="text"
+                            name="Address"
+                            label="Address"
+                            value={values.Address}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+                    <div id="adduserformgroup">
+                        <label htmlFor="Country">Country</label>
+                        <select name="Country" id="country" className="donor-text-input"
+                            value={values.Country}
+                            onChange={handleInputChange}
+                            required >
+                            <option value="Egypt"> Egypt</option>
+                            <option value="Ghana"> Ghana</option>
+                            <option value="Kenya"> Kenya</option>
+                            <option value="Nigeria"> Nigeria</option>
+                            <option value="SouthAfrica"> SouthAfrica</option>
+                        </select>
+                    </div>
                 </div>
-                <div id="signinform-group">
-                    <label htmlFor="">Address</label>
-                    <input
-                        type="text"
-                        name="Address"
-                        label="Address"
-                        value={values.Address}
-                        onChange={handleInputChange}
-                        required
-                    />
-                </div>
-                <div className="form-input-field">
-                    <label htmlFor="Country">Country</label>
-                    <select name="Country" id="country" className="donor-text-input"
-                        value={values.Country}
-                        onChange={handleInputChange}
-                        required >
-                        <option value="Egypt"> Egypt</option>
-                        <option value="Ghana"> Ghana</option>
-                        <option value="Kenya"> Kenya</option>
-                        <option value="Nigeria"> Nigeria</option>
-                        <option value="SouthAfrica"> SouthAfrica</option>
-                    </select>
-                </div>
-                <div id="signinform-group">
+                <div id="adduserformgroup">
                     <label htmlFor="">Student Photo Upload</label>
                     <input
                         type="file"
@@ -100,7 +105,7 @@ function AddNewUser() {
                         required
                     />
                 </div>
-                <div id="signinform-group">
+                <div id="adduserformgroup">
                     <label htmlFor="">Parent Name</label>
                     <input
                         type="text"
@@ -111,7 +116,7 @@ function AddNewUser() {
                         required
                     />
                 </div>
-                <div id="signinform-group">
+                <div id="adduserformgroup">
                     <label htmlFor="">Contact Email</label>
                     <input
                         type="email"
@@ -122,10 +127,10 @@ function AddNewUser() {
                         required
                     />
                 </div>
-                <div id="signinform-group">
+                <div id="adduserformgroup">
                     <label htmlFor="">Contact Phonenumber</label>
                     <input
-                        type="number"
+                        type="text"
                         name="ParentPhonenumber"
                         label="ParentPhonenumber"
                         value={values.ParentPhonenumber}
@@ -134,7 +139,7 @@ function AddNewUser() {
                     />
                 </div>
 
-                <button id="signin_submit_btn" type="submit" value="" >
+                <button id="adduser_submit_btn" type="submit" value="" >
                     SAVE CHANGES </button>
 
             </form>
