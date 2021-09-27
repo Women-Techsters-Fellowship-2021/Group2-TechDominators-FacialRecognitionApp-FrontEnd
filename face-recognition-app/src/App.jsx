@@ -4,12 +4,13 @@ import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import ContactUs from "./Pages/Contact-us";
-
+import AddNewUser from "./Pages/AddNewUser";
+import { WebcamCapture } from "./Pages/FaceScan";
+import ParentForm from "./Pages/ParentForm";
 
 
 function App() {
   return (
-
 
     <div className="App">
 
@@ -30,6 +31,15 @@ function App() {
           </Route>
           <Route path='/sign-up'>
             <SignUp />
+          </Route>
+          <Route path='/addnewuser'>
+            <AddNewUser />
+          </Route>
+          <Route path='/face-scan'>
+            <WebcamCapture />
+          </Route>
+          <Route path='/parent-form'>
+            <ParentForm />
           </Route>
         </Switch>
 

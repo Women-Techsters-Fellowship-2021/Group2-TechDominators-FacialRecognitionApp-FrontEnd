@@ -1,18 +1,19 @@
-#addnewuserformcontainer{
+#parentuserformcontainer{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+   
 }
-#addnewuserform{
+#parentaddnewuserform{
     width: 65%;
     margin-top: 1em;
     color: #2F2E41;
 }
-#adduserformgroup{
+#parentadduserformgroup{
     display: flex;
     flex-direction: column;
 }
-#adduserformgroup input{
+#parentadduserformgroup input{
     width: 100%;
     border: 1.5px solid gray;
     border-radius: 1em;
@@ -21,7 +22,7 @@
     margin-bottom: 1em;  
     color: #2F2E41;  
 }
-#adduserformgroup select{
+#parentadduserformgroup select{
     width: 100%;
     border: 1.5px solid gray;
     border-radius: 1em;
@@ -30,13 +31,7 @@
     margin-bottom: 1em;
     color: #2F2E41;
 }
-#adduserageandclass{
-    display: flex;
-}
-#adduseraddressandcountry{
-    display: flex;
-}
-#adduser_submit_btn{
+#parentadduser_submit_btn{
     background: #FF5D00;
     cursor: pointer;
     width: 25.5em;
@@ -49,6 +44,6 @@
     margin-top: 2em;
     margin-bottom: 2em;
 }
-#adduser_submit_btn:hover{
+#parentadduser_submit_btn:hover{
     background: #3F3D56;
 }
