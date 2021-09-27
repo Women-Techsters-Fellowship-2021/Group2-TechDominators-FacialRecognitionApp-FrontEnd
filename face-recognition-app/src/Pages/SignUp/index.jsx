@@ -8,8 +8,9 @@ function SignUp() {
 
     const signUpHistory = useHistory();
     const initialValues = {
-        FirstName: "",
-        LastName: "",
+        SchoolName: "",
+        Location: "",
+        Country: "",
         Email: "",
         Password: "",
         ConfirmPassword: ""
@@ -41,8 +42,9 @@ function SignUp() {
             method: "POST",
             // Adding body or contents to send
             body: JSON.stringify({
-                FirstName: values.FirstName,
-                LastName: values.LastName,
+                SchoolName: values.SchoolName,
+                Location: values.Location,
+                Country: values.Country,
                 Email: values.Email,
                 Password: values.Password,
                 ConfirmPassword: values.ConfirmPassword
@@ -72,25 +74,38 @@ function SignUp() {
                         <h2>Sign Up</h2>
                         {/* <a href="/" className="back-link">Back</a> */}
                         <div classname="sign_group">
-                            <label htmlFor="">FIRST NAME</label>
+                            <label htmlFor="">SCHOOL NAME</label>
                             <input
                                 type="text"
-                                name="FirstName"
-                                label="FirstName"
-                                value={values.FirstName}
+                                name="SchoolName"
+                                label="SchoolName"
+                                value={values.SchoolName}
                                 onChange={handleInputChange}
                                 required />
                         </div>
                         <div>
-                            <label htmlFor="">LAST NAME</label>
+                            <label htmlFor="">LOCATION</label>
                             <input
                                 type="text"
-                                name="LastName"
-                                label="LastName"
-                                value={values.LastName}
+                                name="Location"
+                                label="Location"
+                                value={values.Location}
                                 onChange={handleInputChange}
                                 required />
 
+                        </div>
+                        <div>
+                            <label htmlFor="">COUNTRY</label>
+                            <select name="Country"
+                                value={values.Country}
+                                onChange={handleInputChange}
+                                required >
+                                <option value="Egypt"> Egypt</option>
+                                <option value="Ghana"> Ghana</option>
+                                <option value="Kenya"> Kenya</option>
+                                <option value="Nigeria"> Nigeria</option>
+                                <option value="SouthAfrica"> SouthAfrica</option>
+                            </select>
                         </div>
                         <div className="email_sign_up">
                             <label htmlFor="">EMAIL</label>
@@ -123,7 +138,7 @@ function SignUp() {
                                 required />
                         </div>
                         <div>
-                            <input type="checkbox" className="checked" />
+                            <input type="checkbox" className="checked" required />
                             <span class="checkmark">I Agree to the terms and conditions</span>
                         </div>
                         <button className="sign_up_submit" type="submit" value="" >
