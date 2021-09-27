@@ -17,6 +17,16 @@
     margin-bottom: 1em;
     
 }
+.sign_up_container select{
+    padding-left: 2em;
+    color: #2F2E41;
+    border: 1.9px solid #3F3D56;
+    border-radius: 2em;
+    width: 28.5em;
+    height: 3.5em;
+    margin-bottom: 1em;
+    
+}
 .sign_up_container label{
     color: #3F3D56;
 }
@@ -49,7 +59,7 @@
     color: white;
     border-radius: 2em;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .sign_up_submit:hover{
     background: #3F3D56;
