@@ -1,59 +1,58 @@
 import React from 'react';
-import { useState } from 'react';
+import './index.css';
 
 
-function StudentDisplay() {
-    const [list, setList] = useState([]);
-
-    useEffect(() => {
-        let mounted = true;
-        fetch('https://localhost:5001/api/v1/Authentication/login')
-            .then(data => data.json())
-            .then(items => {
-                if (mounted) {
-                    setList(items)
-                }
-            })
-        return () => mounted = false;
-    }, [])
+function StudentDisplay({ StudentPhoto, StudentName, Age, Class, Address, Country }) {
 
     return (
-        <div id="studentdisplaycontainer">
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Student Photo</label>
-                <div>
-                    <img src={list.StudentPhoto} alt="" />
-                </div>
-            </div>
 
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Student Name</label>
-                <div>
-                    {list.StudentName}
+        <div id="studentdisplaymaincontainer">
+            <div id="studentdisplaycontainer">
+                <div id="studentdisplayformgroup">
+
+                    <div id="studentdisplayformgroupimage">
+                        {/* <img src={StudentPhoto} alt="" /> */}
+                        <img src="https://i.pinimg.com/474x/d5/09/db/d509dbbfc92344fefca47a07925ab008--beautiful-little-girls-beautiful-eyes.jpg" alt="" />
+                    </div>
                 </div>
-            </div>
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Student Age</label>
-                <div>
-                    {list.Age}
+
+                <div id="studentdisplayformgroup">
+                    <label htmlFor="">Student Name</label>
+                    <div>{/* {StudentName} */}
+                        Ava Bangs
+                    </div>
                 </div>
-            </div>
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Student Class</label>
-                <div>
-                    {list.Class}
+                <div id="studentdisplayformageandclass">
+                    <div id="studentdisplayformgroup" className="studentdisplayformgroupage">
+                        <label htmlFor="">Student Age</label>
+                        <div>
+                            {/* {Age} */}
+                            14
+                        </div>
+                    </div>
+                    <div id="studentdisplayformgroup">
+                        <label htmlFor="">Student Class</label>
+                        <div>
+                            {/* {Class} */}
+                            grade 4
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Student Address</label>
-                <div>
-                    {list.Address}
-                </div>
-            </div>
-            <div id="studentdisplayformgroup">
-                <label htmlFor="">Country </label>
-                <div>
-                    {list.Country}
+                <div id="studentdisplayformaddressandcountry">
+                    <div id="studentdisplayformgroup" className="studentdisplayformgroupaddress">
+                        <label htmlFor="">Student Address</label>
+                        <div>
+                            {/* {Address} */}
+                            675, mellow st.
+                        </div>
+                    </div>
+                    <div id="studentdisplayformgroup">
+                        <label htmlFor="">Country </label>
+                        <div>
+                            {/* {Country} */}
+                            Kenya
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

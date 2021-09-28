@@ -1,0 +1,50 @@
+#studentdisplaymaincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#studentdisplaycontainer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    border: 1.5px solid gray;
+    margin-top: 2em;
+    padding: 1em 3.5em;
+}
+#studentdisplayformgroup img{
+    width: 12em; 
+    height: 12em; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+#studentdisplayformgroup div{
+    border: 1.5px solid gray;
+    border-radius: 1em;
+    font-size: 15px;
+    padding: 0.7em 1.4em;
+    margin-bottom: 1em;  
+    color: #2F2E41;
+}
+#studentdisplayformgroupimage{
+    text-align: center;
+    /* border: 0; */
+}
+#studentdisplayformgroup label{
+    color: #2F2E41; 
+    margin-left: 0.4em;
+}
+#studentdisplayformageandclass{
+    display: flex;
+}
+#studentdisplayformaddressandcountry{
+    display: flex;
+}
+.studentdisplayformgroupage{
+    margin-right: 2em;
+}
+.studentdisplayformgroupaddress{
+     margin-right: 2em;
+}
