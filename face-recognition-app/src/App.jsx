@@ -7,6 +7,7 @@ import ContactUs from "./Pages/Contact-us";
 import AddNewUser from "./Pages/AddNewUser";
 import { WebcamCapture } from "./Pages/FaceScan";
 import ParentForm from "./Pages/ParentForm";
+import StudentDisplay from "./Pages/StudentDisplay";
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path='/parent-form'>
             <ParentForm />
+          </Route>
+          <Route path='/student-display'>
+            <StudentDisplay />
           </Route>
         </Switch>
 
