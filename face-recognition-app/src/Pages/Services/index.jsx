@@ -16,6 +16,7 @@ function Services() {
       <section className="services">
         <div className="services-inside">
           <h1>Our Services</h1>
+          <div className="header-underline"></div>
           <p>
             We provide you the best options and services to suit your
             convenience while ensuring adequate safety measures are in check

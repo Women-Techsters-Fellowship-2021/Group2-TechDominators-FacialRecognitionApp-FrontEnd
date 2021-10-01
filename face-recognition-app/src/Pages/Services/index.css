@@ -22,9 +22,20 @@
   margin-top: 0;
   font-size: 38px;
   color: #4d4d4d;
-  text-decoration: underline;
-  text-decoration-color: red;
 }
+
+.services-inside h1::after {
+  content: "";
+  background-color: red;
+  width: 8%;
+  margin-left: 50%;
+  height: 3px;
+  display: block;
+}
+
+/* .header-underline {
+  border-top: red solid 2px;
+} */
 
 .box-image-4 img {
   width: 35em;
