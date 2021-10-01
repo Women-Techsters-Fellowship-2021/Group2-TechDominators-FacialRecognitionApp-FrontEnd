@@ -1,11 +1,35 @@
-.box-image-1 img {
+/* .box-image-1 img {
+  width: 40em;
+  height: auto;
+  margin-left: 0.3em;
+} */
+
+/* .box-image img {
+  margin-left: 0.3em;
+} */
+
+.big-image div {
   width: 40em;
   height: auto;
   margin-left: 0.3em;
 }
 
-.box-image img {
-  margin-left: 0.3em;
+.big-image {
+  display: flex;
+  justify-content: center;
+}
+
+.small-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.small-details div {
+  display: flex;
+  max-width: 60%;
+  justify-content: space-between;
 }
 
 .services-inside {
