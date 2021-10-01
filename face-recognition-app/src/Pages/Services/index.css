@@ -1,0 +1,39 @@
+.box-image-1 img {
+  width: 40em;
+  height: auto;
+  margin-left: 0.3em;
+}
+
+.box-image img {
+  margin-left: 0.3em;
+}
+
+.services-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+  width: 60vh;
+}
+.services-inside h1 {
+  padding-bottom: 2em;
+  margin-top: 0;
+  font-size: 38px;
+  color: #4d4d4d;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.box-image-4 img {
+  width: 35em;
+  height: 25em;
+  margin-left: 0.3em;
+}
+
+.box-image-5 img {
+  width: 35em;
+  height: 25em;
+  margin-left: 0.3em;
+}
