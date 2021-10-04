@@ -5,10 +5,11 @@
 .webcam-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     height: 100vh;
+    margin-top: 6.5em;
    
 
 }
