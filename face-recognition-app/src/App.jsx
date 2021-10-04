@@ -8,6 +8,7 @@ import AddNewUser from "./Pages/AddNewUser";
 import { WebcamCapture } from "./Pages/FaceScan";
 import ParentForm from "./Pages/ParentForm";
 import StudentDisplay from "./Pages/StudentDisplay";
+// import Navbar2 from "./Components/Navbar2";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
+        {/* <Navbar2 /> */}
         <Switch>
           <Route path='/' exact>
             <Landing />

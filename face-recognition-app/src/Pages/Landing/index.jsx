@@ -12,10 +12,12 @@ import right from '../../store/right-arrows.svg';
 
 import './index.css';
 import Footer from '../../Components/Footer';
+// import Navbar from '../../Components/Navbar';
 
 function Landing() {
     return (
         <div>
+            {/* <Navbar /> */}
             <section className="first-section">
                 <div className="first-section-inside">
                     <div className="first-section-content">

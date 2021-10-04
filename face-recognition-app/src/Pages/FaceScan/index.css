@@ -1,0 +1,36 @@
+#webcam-container-main{
+    display: flex;
+     background: rgba(63,116,170,0.05);
+}
+.webcam-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+   
+
+}
+.webcam-img{
+    border: 2px solid #3F74AA;
+    width: 70%;
+
+}
+#facescan-button{
+     background: #FF5D00;
+    cursor: pointer;
+    width: 25.5em;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1.1em 2em;
+    color: white;
+    border-radius: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-self: center;
+}
+#facescan-button:hover{
+    background: #3F74AA;
+}
