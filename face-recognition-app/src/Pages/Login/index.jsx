@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useHistory } from 'react-router-dom';
+// import Navbar from "../../Components/Navbar";
 import Group from '../../store/Group.9.mod.png';
 import './index.css';
 
@@ -58,11 +59,12 @@ function Login() {
                 console.log('Error message: ', error);
             });
 
-        loginHistory.push('/');
+        loginHistory.push('/addnewuser');
     }
 
     return (
         <div>
+            {/* <Navbar /> */}
             <div id="signin_container">
                 <div id="signin_image">
                     <img src={Group} alt="" />

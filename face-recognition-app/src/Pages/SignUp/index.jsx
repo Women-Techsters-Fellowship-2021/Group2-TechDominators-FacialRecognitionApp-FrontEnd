@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+// import Navbar from '../../Components/Navbar';
 import Group from '../../store/Group 14.svg';
 import './index.css';
 
@@ -67,6 +68,7 @@ function SignUp() {
 
     return (
         <div>
+            {/* <Navbar /> */}
             <div className="main-sign-up">
                 <div className="sign_up_container">
 
