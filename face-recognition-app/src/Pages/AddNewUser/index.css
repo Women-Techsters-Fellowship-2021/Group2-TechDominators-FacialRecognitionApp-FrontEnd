@@ -1,13 +1,27 @@
+#addnewuserformcontainerwithsidebar{
+    display: flex;
+    background: rgba(63,116,170,0.05);
+    /* min-height: 100vh; */
+
+}
 #addnewuserformcontainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background: rgba(114, 117, 121, 0.05); */
+   
 }
 #addnewuserform{
     width: 65%;
-    margin-top: 1em;
+    margin-top: 3em;
     color: #2F2E41;
+     box-shadow: 1px 5px 25px -8px rgb(63,116,170); 
+     padding: 1.5em;
+     margin-bottom: 4em;
+     background: white;
 }
+
 #adduserformgroup{
     display: flex;
     flex-direction: column;
@@ -35,6 +49,12 @@
 }
 #adduseraddressandcountry{
     display: flex;
+}
+.adduserformgroupage{
+    margin-right: 2em;
+}
+.adduserformgroupaddress{
+    margin-right: 2em;
 }
 #adduser_submit_btn{
     background: #FF5D00;

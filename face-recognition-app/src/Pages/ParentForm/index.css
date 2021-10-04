@@ -1,13 +1,31 @@
+#parentuserformcontainermain{
+    display: flex;
+    background: rgba(63,116,170,0.05);
+    /* min-height: 100vh; */
+}
+
 #parentuserformcontainer{
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 #parentaddnewuserform{
     width: 65%;
-    margin-top: 1em;
+    margin-top: 3em;
     color: #2F2E41;
+    box-shadow: 1px 5px 30px -8px rgb(63,116,170); 
+    padding: 1.5em;
+    margin-bottom: 5em;
+    background: white;
+}
+#parentaddnewuserform a{
+    text-decoration: none;
+    color: rgb(63,116,170);
+}
+#parentaddnewuserform a:hover{
+    color: #FF5D00;
 }
 #parentadduserformgroup{
     display: flex;
