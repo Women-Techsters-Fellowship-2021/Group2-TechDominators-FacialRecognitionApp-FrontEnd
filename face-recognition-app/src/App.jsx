@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+import Services from "./Pages/Services";
 import ContactUs from "./Pages/Contact-us";
 import AddNewUser from "./Pages/AddNewUser";
 import { WebcamCapture } from "./Pages/FaceScan";
@@ -23,9 +24,9 @@ function App() {
           <Route path='/' exact>
             <Landing />
           </Route>
-          {/* <Route path='/services'>
-            <Services /> */}
-          {/* </Route> */}
+          <Route path='/services'>
+            <Services />
+          </Route>
           <Route path='/contactus'>
             <ContactUs />
           </Route>
