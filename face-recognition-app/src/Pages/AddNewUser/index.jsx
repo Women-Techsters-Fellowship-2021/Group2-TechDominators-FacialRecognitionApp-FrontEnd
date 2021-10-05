@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Axios from 'axios';
+import { useHistory } from 'react-router';
 // import { parentSubmit } from './partent';
 // import { toast } from 'react-toastify';
 import './index.css';
@@ -8,6 +9,7 @@ import './index.css';
 import SideBar from '../../Components/Sidebar';
 
 function AddNewUser() {
+    const addHistory = useHistory();
     const initialValues = {
         SchoolId: "",
         StudentName: "",
@@ -86,6 +88,8 @@ function AddNewUser() {
                 // Handle error 
                 console.log('Error message: ', error);
             });
+
+        addHistory.push('/addnewuser');
     }
 
 

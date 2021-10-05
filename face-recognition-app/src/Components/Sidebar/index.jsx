@@ -13,6 +13,9 @@ function SideBar() {
                 <li>
                     <Link to='/parent-form' >Add Parent/Guardian</Link>
                 </li>
+                <li>
+                    <Link to='/student-display' >View Student Details</Link>
+                </li>
 
                 <li>
                     <Link to='/face-scan' > Face Scan</Link>
