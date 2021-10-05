@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBar from '../../Components/Sidebar';
 import './index.css';
 
 
@@ -7,19 +8,25 @@ function StudentDisplay({ StudentPhoto, StudentName, Age, Class, Address, Countr
     return (
 
         <div id="studentdisplaymaincontainer">
+            <SideBar />
             <div id="studentdisplaycontainer">
                 <div id="studentdisplayformgroup">
 
-                    <div id="studentdisplayformgroupimage">
+                    <div id="studentdisplayformgroupimage" style={{ border: 0 }}>
                         {/* <img src={StudentPhoto} alt="" /> */}
-                        <img src="https://i.pinimg.com/474x/d5/09/db/d509dbbfc92344fefca47a07925ab008--beautiful-little-girls-beautiful-eyes.jpg" alt="" />
+                        <img src="https://p1.pxfuel.com/preview/101/697/102/african-child-black-child-child-face.jpg" alt="" />
                     </div>
                 </div>
-
+                <div id="studentdisplayformgroup">
+                    <label htmlFor="">Student Id</label>
+                    <div>{/* {StudentName} */}
+                        2c4cf11c-daa5-4070-b658-360b7e50889c
+                    </div>
+                </div>
                 <div id="studentdisplayformgroup">
                     <label htmlFor="">Student Name</label>
                     <div>{/* {StudentName} */}
-                        Ava Bangs
+                        Shannon Shaw
                     </div>
                 </div>
                 <div id="studentdisplayformageandclass">
@@ -27,14 +34,14 @@ function StudentDisplay({ StudentPhoto, StudentName, Age, Class, Address, Countr
                         <label htmlFor="">Student Age</label>
                         <div>
                             {/* {Age} */}
-                            14
+                            8
                         </div>
                     </div>
                     <div id="studentdisplayformgroup">
                         <label htmlFor="">Student Class</label>
                         <div>
                             {/* {Class} */}
-                            grade 4
+                            Grade 3
                         </div>
                     </div>
                 </div>
@@ -43,15 +50,36 @@ function StudentDisplay({ StudentPhoto, StudentName, Age, Class, Address, Countr
                         <label htmlFor="">Student Address</label>
                         <div>
                             {/* {Address} */}
-                            675, mellow st.
+                            675, Mellow st., Lagos
                         </div>
                     </div>
                     <div id="studentdisplayformgroup">
                         <label htmlFor="">Country </label>
                         <div>
                             {/* {Country} */}
-                            Kenya
+                            Nigeria
                         </div>
+                    </div>
+                </div>
+
+                <h2>Guardian details</h2>
+
+                <div id="studentdisplayformgroup">
+                    <label htmlFor="">Name</label>
+                    <div>{/* {ParentName} */}
+                        Mercy Shaw
+                    </div>
+                </div>
+                <div id="studentdisplayformgroup">
+                    <label htmlFor="">Contact Email</label>
+                    <div>{/* {StudentName} */}
+                        mercy.shaw@gmail.com
+                    </div>
+                </div>
+                <div id="studentdisplayformgroup">
+                    <label htmlFor="">Contact Phonenumber</label>
+                    <div>{/* {StudentName} */}
+                        +234765893768
                     </div>
                 </div>
             </div>

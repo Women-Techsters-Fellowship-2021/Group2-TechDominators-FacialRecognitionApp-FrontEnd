@@ -1,24 +1,30 @@
 #studentdisplaymaincontainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: rgba(63,116,170,0.05);
 }
 #studentdisplaycontainer{
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    border: 1.5px solid gray;
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 4em;
     padding: 1em 3.5em;
+    padding-bottom: 3em;
+    background: white;
+    margin-left: 8%;
+    box-shadow: 1px 5px 25px -8px rgb(63,116,170); 
 }
 #studentdisplayformgroup img{
     width: 12em; 
     height: 12em; 
     object-fit: cover; 
     border-radius: 50%;
+}
+#studentdisplayformgroup label{
+    font-weight: 600;
 }
 #studentdisplayformgroup div{
     border: 1.5px solid gray;
@@ -27,6 +33,11 @@
     padding: 0.7em 1.4em;
     margin-bottom: 1em;  
     color: #2F2E41;
+}
+#studentdisplaycontainer h2{
+    color:#2F2E41;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 #studentdisplayformgroupimage{
     text-align: center;
